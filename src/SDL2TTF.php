@@ -73,8 +73,22 @@ class SDL2TTF implements HeaderInterface
         $pre = clone $pre;
 
         $pre->add('SDL.h', <<<'CPP'
+        typedef enum { SDL_FALSE = 0, SDL_TRUE = 1 } SDL_bool;
 
+        typedef uint16_t Uint16;
+        typedef uint32_t Uint32;
+
+        typedef struct SDL_version SDL_version;
+        typedef struct SDL_RWops SDL_RWops;
+        typedef struct SDL_Surface SDL_Surface;
+        typedef struct SDL_Color SDL_Color;
         CPP);
+
+        $pre->add('begin_code.h', '');
+        $pre->add('close_code.h', '');
+
+        $pre->define('DECLSPEC', '');
+        $pre->define('SDLCALL', '');
 
         if (!$version instanceof VersionInterface) {
             $version = Version::create($version);
