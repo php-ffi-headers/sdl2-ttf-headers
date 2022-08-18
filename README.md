@@ -7,7 +7,7 @@
 <p align="center">
     <a href="https://github.com/php-ffi-headers/sdl2-ttf-headers/actions"><img src="https://github.com/php-ffi-headers/sdl2-ttf-headers/workflows/build/badge.svg"></a>
     <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://img.shields.io/badge/PHP-8.1.0-ff0140.svg"></a>
-    <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://img.shields.io/badge/SDL2%20TTF-2.0.18-cc3c20.svg"></a>
+    <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://img.shields.io/badge/SDL2%20TTF-2.20.0-cc3c20.svg"></a>
     <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://poser.pugx.org/ffi-headers/sdl2-ttf-headers/version" alt="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://poser.pugx.org/ffi-headers/sdl2-ttf-headers/v/unstable" alt="Latest Unstable Version"></a>
     <a href="https://packagist.org/packages/ffi-headers/sdl2-ttf-headers"><img src="https://poser.pugx.org/ffi-headers/sdl2-ttf-headers/downloads" alt="Total Downloads"></a>
