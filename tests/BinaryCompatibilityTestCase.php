@@ -53,14 +53,14 @@ class BinaryCompatibilityTestCase extends TestCase
     public function testWindowsBinaryCompatibility(Version $version): void
     {
         if (!\is_file(self::DIR_STORAGE . '/SDL2.dll')) {
-            Downloader::zip(\vsprintf('https://www.libsdl.org/release/SDL2-2.0.20-win32-x64.zip', [
+            Downloader::zip(\vsprintf('https://www.libsdl.org/release/SDL2-2.24.0-win32-x64.zip', [
                 $version->toString()
             ]))
                 ->extract('SDL2.dll', self::DIR_STORAGE . '/SDL2.dll');
         }
 
         if (!\is_file($binary = self::DIR_STORAGE . '/SDL2_ttf.dll')) {
-            Downloader::zip('https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.0.18/SDL2_ttf-2.0.18-win32-x64.zip')
+            Downloader::zip('https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.20.1/SDL2_ttf-2.20.1-win32-x64.zip')
                 ->extract('SDL2_ttf.dll', self::DIR_STORAGE . '/SDL2_ttf.dll');
         }
 
